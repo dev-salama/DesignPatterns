@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Vhicle;
+package Vehicle;
 
 /**
  *
  * @author A
  */
 public abstract class Driver {
-    public void driveVhicle(String loaction){
-        Vhicle myVhicle = createVhicle();
-        myVhicle.drive();
-        myVhicle.goLoctaion(loaction);
-        myVhicle.stop();
+    public void driveVehicle(String loaction){
+        Vehicle myVehicle = createVehicle();
+        myVehicle.drive();
+        myVehicle.goLoctaion(loaction);
+        myVehicle.stop();
     } 
-    public abstract Vhicle createVhicle();
+    public abstract Vehicle createVehicle();
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Vhicle;
+package Vehicle;
 
 /**
  *
@@ -11,7 +11,7 @@ package Vhicle;
 public class carDriver extends Driver{
 
     @Override
-    public Vhicle createVhicle() {
+    public Vehicle createVehicle() {
         return new Car();
     }
     
