@@ -13,10 +13,10 @@ public class Test {
         Aljzeera aj = new Aljzeera();
         BBC bbc = new BBC();
         CNN cnn = new CNN();
-        
-        DataBus.getInstance().Subscribe(aj);
-        DataBus.getInstance().Subscribe(bbc);
-        DataBus.getInstance().Subscribe(cnn);
+        DataBus dataBus = DataBus.getInstance();
+        dataBus.Subscribe(aj);
+        dataBus.Subscribe(bbc);
+        dataBus.Subscribe(cnn);
         
         aj.sendNews("Hello");
         cnn.sendNews("Gaza under attack");
